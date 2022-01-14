@@ -98,3 +98,4 @@ D:\testing\TestSelenium\TestSelenium\TestSelenium\obj\Debug\net6.0\ref\TestSelen
 D:\testing\TestSelenium\TestSelenium\TestSelenium\obj\Debug\net6.0\TestSelenium.pdb
 D:\testing\TestSelenium\TestSelenium\TestSelenium\obj\Debug\net6.0\TestSelenium.genruntimeconfig.cache
 D:\testing\TestSelenium\TestSelenium\TestSelenium\bin\Debug\net6.0\WebDriver.dll
+D:\testing\TestSelenium\TestSelenium\TestSelenium\bin\Debug\net6.0\SeleniumExtras.PageObjects.dll

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "TestSelenium/1.0.0": {
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects.Core": "4.0.1",
           "Microsoft.NET.Test.Sdk": "16.11.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0",
@@ -20,6 +21,17 @@
         }
       },
       "coverlet.collector/3.1.0": {},
+      "DotNetSeleniumExtras.PageObjects.Core/4.0.1": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.1.0"
+        },
+        "runtime": {
+          "lib/net5.0/SeleniumExtras.PageObjects.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.11.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -342,6 +354,13 @@
       "sha512": "sha512-YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
       "path": "coverlet.collector/3.1.0",
       "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
+    },
+    "DotNetSeleniumExtras.PageObjects.Core/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hbhoy7+qnd9IeUh2S8s30ylmL6X7w2/za/pqzkHgBYwvvykIdJg3n3/pVe9Tdi/ccGS/eNOkkwSY9RSa/Y7Z0Q==",
+      "path": "dotnetseleniumextras.pageobjects.core/4.0.1",
+      "hashPath": "dotnetseleniumextras.pageobjects.core.4.0.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.11.0": {
       "type": "package",
