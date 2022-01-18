@@ -10,10 +10,10 @@ namespace TestSelenium.patterns
         private WebDriver _driver;
         private WebDriverWait _wait;
         
-        [FindsBy(How = How.XPath, Using = "//a[contains(@href, 'information')]")]
+        [FindsBy(How = How.XPath, Using = "//ul[@id='topItemsMenu']//li/a[contains(@href, 'information')]")]
         public IWebElement Information { get; set; }
         
-        [FindsBy(How = How.XPath, Using = "//a[contains(@href, 'aboutproject')]")]
+        [FindsBy(How = How.XPath, Using = "//ul[@id='topItemsMenu']//li/a[contains(@href, 'aboutproject')]")]
         public IWebElement About { get; set; }
 
         public Menu sendOrderMenu;
@@ -26,12 +26,14 @@ namespace TestSelenium.patterns
             _driver.Url = "https://old.kzn.opencity.pro/";
             _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
             sendOrderMenu = new Menu(_driver, "sendorder");
+            Console.WriteLine("sendOrderMenu.getText() " + sendOrderMenu.getText());
             informationMenu = new Menu(_driver, "information");
         }
 
-        public void Open()
+        public StartPage Open()
         {
             _driver.Navigate().GoToUrl(_driver.Url);
+            return this;
         }
 
         public RegistrationPage GetRegistrationPage()

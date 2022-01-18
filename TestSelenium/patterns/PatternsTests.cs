@@ -11,12 +11,23 @@ namespace TestSelenium.patterns
     {
         private WebDriver driver;
         private WebDriverWait wait;
+        private StartPage _startPage;
         
         [OneTimeSetUp]
         public void Setup()
         {
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+        }
+
+        [SetUp]
+        public void BeforeTest()
+        {
+            if (driver.FindElements(By.XPath("//a[@class='btnExit']")).Count > 0)
+            {
+                driver.FindElement(By.XPath("//a[@class='btnExit']")).Click();
+            }
+            _startPage = new StartPage(driver).Open();
         }
 
         [OneTimeTearDown]
@@ -28,8 +39,9 @@ namespace TestSelenium.patterns
         [Test]
         public void RegistrationTesting()
         {
-            var registrationPage = new StartPage(driver).GetRegistrationPage();
-            registrationPage.SetEmail("dfsfsfs@sfdsfs.ru")
+            Random rnd = new Random();
+            var registrationPage = _startPage.GetRegistrationPage();
+            registrationPage.SetEmail(rnd.Next(1000,9999).ToString() +"dfsfsfs@sfdsfs.ru")
                 .SubmitRegistration();
             Assert.IsTrue(registrationPage.IsSuccessRegistration());
         }
@@ -37,7 +49,7 @@ namespace TestSelenium.patterns
         [Test]
         public void LoginTesting()
         {
-            var loginPage = new StartPage(driver).GetLoginPage();
+            var loginPage = _startPage.GetLoginPage();
             loginPage.Login("alisa.skrynko@gmail.com", "c069db");
             Assert.AreEqual("https://old.kzn.opencity.pro/cabinet/", driver.Url, "Не перешли в личный кабинет");
         }
@@ -45,9 +57,8 @@ namespace TestSelenium.patterns
         [Test]
         public void FActoryTest()
         {
-            StartPage startPage = new StartPage(driver);
-            PageFactory.InitElements(driver, startPage);
-            startPage.About.Click();
+            PageFactory.InitElements(driver, _startPage);
+            _startPage.About.Click();
             Assert.AreEqual("https://old.kzn.opencity.pro/aboutproject", driver.Url);
         }
 
@@ -55,19 +66,15 @@ namespace TestSelenium.patterns
         [Test]
         public void PageElementTesting()
         {
-            StartPage startPage = new StartPage(driver);
-            startPage.sendOrderMenu.Click();
+            _startPage.sendOrderMenu.getElement().Click();
             Assert.AreEqual("https://old.kzn.opencity.pro/sendorder", driver.Url);
         }
-
-
-        [Test]
+        
         public void BuilderTest()
         {
             var person = new Person.Builder()
                 .WithSurname("Petrov")
                 .WithName("Dima").build();
-            var a = 5;
         }
     }
 }
