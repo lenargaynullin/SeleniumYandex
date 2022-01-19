@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace TestSelenium.patterns
 {
@@ -11,9 +12,9 @@ namespace TestSelenium.patterns
             this.menuItem = driver.FindElement(By.XPath($"//ul[@id='topItemsMenu']//li/a[contains(@href, '{containsUrl}')]"));
         }
 
-        public IWebElement getElement()
+        public void onClick()
         {
-            return menuItem;
+            this.menuItem.Click();
         }
 
         public string getText()

@@ -25,14 +25,12 @@ namespace TestSelenium.patterns
             _driver = driver;
             _driver.Url = "https://old.kzn.opencity.pro/";
             _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            sendOrderMenu = new Menu(_driver, "sendorder");
-            Console.WriteLine("sendOrderMenu.getText() " + sendOrderMenu.getText());
-            informationMenu = new Menu(_driver, "information");
+            sendOrderMenu = new Menu(driver, "sendorder");
+            informationMenu = new Menu(driver, "information");
         }
 
         public StartPage Open()
         {
-            _driver.Navigate().GoToUrl(_driver.Url);
             return this;
         }
 
@@ -47,6 +45,5 @@ namespace TestSelenium.patterns
             _driver.FindElement(By.XPath("//a[@data-ui='auth']")).Click();
             return new LoginPage(_driver, _wait);
         }
-        
     }
 }

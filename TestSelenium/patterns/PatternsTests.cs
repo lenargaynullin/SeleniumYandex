@@ -66,7 +66,7 @@ namespace TestSelenium.patterns
         [Test]
         public void PageElementTesting()
         {
-            _startPage.sendOrderMenu.getElement().Click();
+            _startPage.sendOrderMenu.onClick();
             Assert.AreEqual("https://old.kzn.opencity.pro/sendorder", driver.Url);
         }
         
