@@ -1,0 +1,86 @@
+using System;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System.Threading.Tasks;
+
+namespace TestSelenium
+{
+    public class YandexTest
+    {
+        private WebDriver driver;
+        private WebDriverWait wait;
+        private string login, passwod;
+        private bool isAuth = false;
+
+        const string YandexUrl = "https://yandex.ru/";
+
+        [OneTimeSetUp]
+        public void Setup()
+        {
+            var chromeOptions = new ChromeOptions();
+            
+            // Отключить "Браузером управляет автоматизированное ПО
+            chromeOptions.AddAdditionalCapability("useAutomationExtension", false);
+            chromeOptions.AddExcludedArgument("enable-automation");
+            
+            driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), chromeOptions);
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(25));
+        }
+
+        [OneTimeTearDown]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
+
+        [Test]
+        public void CheckYandexOpenTesting()
+        {
+            //driver.Navigate().GoToUrl(YandexUrl);
+            Assert.AreEqual("https://yandex.ru/", driver.Url, "Яндекс не открылся");
+            
+        }
+
+        [Test]
+        public void CheckYandexTesting()
+        {
+            
+            driver.Manage().Window.Maximize(); // Окно во весь экран
+            driver.Navigate().GoToUrl(YandexUrl); // Открыть yandex.ru
+            
+            
+            
+            // Нажать Яндекс Маркет
+            IWebElement market = wait.Until(e => e.FindElement(By.XPath("//div[text()='Маркет']")));
+            market.Click();
+            
+            // Ввод запроса
+            
+            IWebElement button2 = wait.Until(e => e.FindElement(By.XPath("//input[@class='nQ8aB mini-suggest__input']")));
+            button2.SendKeys("сотовые");
+            
+            IWebElement button3 = wait.Until(e => e.FindElement(By.XPath("//input[@class='nQ8aB mini-suggest__input']")));
+            button3.SendKeys(Keys.Enter);
+            
+            
+
+
+            
+
+            // Выбрать цену от 30000 рублей
+            IWebElement price = wait.Until(e => e.FindElement(By.CssSelector("input[name='Цена от']")));
+            price.SendKeys("30000");
+
+            //driver.FindElement(By.CssSelector("//input[@name='Диагональ экрана 6.5\" и больше']/following-sibling::div[1]"));
+
+
+            Assert.AreEqual("https://yandex.ru/", driver.Url, "Яндекс Маркет не открылся");
+
+        }
+
+        
+    }   
+          
+}

@@ -374,7 +374,7 @@
           "lib/net5.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/96.0.4664.4500": {
+      "Selenium.WebDriver.ChromeDriver/97.0.4692.7100": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -1285,10 +1285,10 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/96.0.4664.4500": {
-      "sha512": "7bH+2/bX4IqPXxnMsbD820pCb1DFLeESIbjpUL/Zgq5wfKJHTxtknrQ1wnlMJmWtbpoNcj6Zck7OfoIVstl3zQ==",
+    "Selenium.WebDriver.ChromeDriver/97.0.4692.7100": {
+      "sha512": "/5wf4Rv9vTmab2qWo3enuYLoumOyVb6+rO0f2hbym+MQzDGYb7GpadhWk/jgNtUf6eFvsqL90TyzXrcCfOhCyQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/96.0.4664.4500",
+      "path": "selenium.webdriver.chromedriver/97.0.4692.7100",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1299,7 +1299,7 @@
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512",
+        "selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -1332,30 +1332,33 @@
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
       "Selenium.WebDriver >= 4.1.0",
-      "Selenium.WebDriver.ChromeDriver >= 96.0.4664.4500",
+      "Selenium.WebDriver.ChromeDriver >= 97.0.4692.7100",
       "coverlet.collector >= 3.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AlisaSkrynko\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenar.Gaynullin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\testing\\TestSelenium\\TestSelenium\\TestSelenium\\TestSelenium.csproj",
+      "projectUniqueName": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
       "projectName": "TestSelenium",
-      "projectPath": "D:\\testing\\TestSelenium\\TestSelenium\\TestSelenium\\TestSelenium.csproj",
-      "packagesPath": "C:\\Users\\AlisaSkrynko\\.nuget\\packages\\",
-      "outputPath": "D:\\testing\\TestSelenium\\TestSelenium\\TestSelenium\\obj\\",
+      "projectPath": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
+      "packagesPath": "C:\\Users\\Lenar.Gaynullin\\.nuget\\packages\\",
+      "outputPath": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AlisaSkrynko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lenar.Gaynullin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource1": {}
       },
       "frameworks": {
         "net6.0": {
@@ -1395,7 +1398,7 @@
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[96.0.4664.4500, )"
+            "version": "[97.0.4692.7100, )"
           },
           "coverlet.collector": {
             "target": "Package",
@@ -1417,7 +1420,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\AlisaSkrynko\\.dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

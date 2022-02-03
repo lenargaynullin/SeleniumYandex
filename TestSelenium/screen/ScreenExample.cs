@@ -7,12 +7,16 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using TestSelenium.patterns;
 
+
 namespace TestSelenium.screen
 {
-    [TestFixture]
-    //[Parallelizable(ParallelScope.All)]
+    
     //[FixtureLifeCycle(LifeCycle.SingleInstance)]
     // https://docs.nunit.org/articles/nunit/writing-tests/attributes/parallelizable.html
+
+
+    // [TestFixtureSource(typeof(TextFixtureArgs))]
+    [Parallelizable(ParallelScope.Fixtures)]
     public class ScreenExample
     {
         private WebDriver driver;
@@ -37,8 +41,9 @@ namespace TestSelenium.screen
         {
             driver.Quit();
         }
-        
+
         [Test]
+       // [Parallelizable(ParallelScope.Self)]
         public void LoginTesting()
         {
             string pathStart = "D:/testing/TestSelenium/TestSelenium/TestSelenium/screen/resourses";
@@ -59,6 +64,7 @@ namespace TestSelenium.screen
         }
         
         [Test]
+        // [Parallelizable(ParallelScope.Self)]
         public void Login2Testing()
         {
             string pathStart = "D:/testing/TestSelenium/TestSelenium/TestSelenium/screen/resourses";
@@ -70,5 +76,8 @@ namespace TestSelenium.screen
             JObject jsonStyle = JObject.Parse(File.ReadAllText(pathStart + "/cssExample.json"));
             Assert.AreEqual(jsonStyle["font"].ToString(), element.GetCssValue("font"));
         }
+
+        
     }
+	
 }
