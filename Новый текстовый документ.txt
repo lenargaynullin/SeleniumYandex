@@ -1,7 +1,0 @@
-public static void mouseClickByLocator( String cssLocator ) {
-     String locator = cssLocator;
-     WebElement el = driver.findElement( By.cssSelector( locator ) );
-     Actions builder = new Actions(driver);
-     builder.moveToElement( el ).click( el );
-     builder.perform();
-}
