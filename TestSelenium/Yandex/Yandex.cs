@@ -23,11 +23,11 @@ namespace TestSelenium
             var chromeOptions = new ChromeOptions();
             
             // Отключить "Браузером управляет автоматизированное ПО
-            chromeOptions.AddAdditionalCapability("useAutomationExtension", false);
-            chromeOptions.AddExcludedArgument("enable-automation");
+            //chromeOptions.AddAdditionalCapability("useAutomationExtension", false);
+            //chromeOptions.AddExcludedArgument("enable-automation");
             
             driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), chromeOptions);
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
         }
 
         [OneTimeTearDown]
@@ -71,32 +71,34 @@ namespace TestSelenium
             Thread.Sleep(3000);
 
             // Диагональ экрана 6.5" и больше
-            IWebElement screen = wait.Until(e => e.FindElement(By.XPath("//span[text()='Диагональ экрана 6.5\" и больше']")));
+            IWebElement screen = wait.Until(e => e.FindElement(By.XPath("//span[text()='6.5\" и больше']")));
             screen.Click();
             Thread.Sleep(3000);
 
+            
+            
             // Apple
-            IWebElement apple = wait.Until(e => e.FindElement(By.CssSelector("input[name='Производитель Apple']")));
+            IWebElement apple = wait.Until(e => e.FindElement(By.XPath("//span[text()='Apple']")));
             apple.Click();
             Thread.Sleep(3000);
 
             // Nokia
-            IWebElement nokia = wait.Until(e => e.FindElement(By.CssSelector("input[name='Производитель Nokia']")));
+            IWebElement nokia = wait.Until(e => e.FindElement(By.XPath("//span[text()='Nokia']")));
             nokia.Click();
             Thread.Sleep(3000);
 
             // Samsung
-            IWebElement samsung = wait.Until(e => e.FindElement(By.CssSelector("input[name='Производитель Samsung']")));
+            IWebElement samsung = wait.Until(e => e.FindElement(By.XPath("//span[text()='Samsung']")));
             samsung.Click();
             Thread.Sleep(3000);
 
             // Xiaomi
-            IWebElement xiaomi = wait.Until(e => e.FindElement(By.CssSelector("input[name='Производитель Xiaomi']")));
+            IWebElement xiaomi = wait.Until(e => e.FindElement(By.XPath("//span[text()='Xiaomi']")));
             xiaomi.Click();
             Thread.Sleep(3000);
 
             // ZTE
-            IWebElement zte = wait.Until(e => e.FindElement(By.CssSelector("input[name='Производитель ZTE']")));
+            IWebElement zte = wait.Until(e => e.FindElement(By.XPath("//span[text()='ZTE']")));
             zte.Click();
             Thread.Sleep(3000);
 

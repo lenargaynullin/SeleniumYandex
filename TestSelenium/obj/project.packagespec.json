@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "G:\\Мой диск\\QA engineer\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
+    "projectUniqueName": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj",
     "projectName": "TestSelenium",
-    "projectPath": "G:\\Мой диск\\QA engineer\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
-    "outputPath": "G:\\Мой диск\\QA engineer\\git\\SeleniumYandex\\TestSelenium\\obj\\",
+    "projectPath": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj",
+    "outputPath": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "net60"

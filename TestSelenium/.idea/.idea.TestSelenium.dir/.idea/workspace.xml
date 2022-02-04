@@ -23,14 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="160d3d7f-538f-488b-98ca-cdcd335e2a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Yandex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSelenium.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestSelenium.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yandex/Yandex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Yandex/Yandex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ref/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ref/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -44,12 +42,10 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/TestSelenium.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen/ScreenExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/screen/ScreenExample.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +55,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/Yandex.cs" />
+        <option value="$PROJECT_DIR$/Yandex/Yandex.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +77,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.TestSelenium">
     <configuration name="TestSelenium" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -115,6 +108,7 @@
       <workItem from="1643212868540" duration="8643000" />
       <workItem from="1643306478225" duration="5490000" />
       <workItem from="1643644864629" duration="9795000" />
+      <workItem from="1643992611660" duration="5659000" />
     </task>
     <servers />
   </component>

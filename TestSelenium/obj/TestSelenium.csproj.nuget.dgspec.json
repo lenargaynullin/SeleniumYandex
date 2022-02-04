@@ -1,29 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj": {}
+    "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj": {}
   },
   "projects": {
-    "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj": {
+    "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
+        "projectUniqueName": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj",
         "projectName": "TestSelenium",
-        "projectPath": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\TestSelenium.csproj",
-        "packagesPath": "C:\\Users\\Lenar.Gaynullin\\.nuget\\packages\\",
-        "outputPath": "C:\\файлы\\QA\\git\\SeleniumYandex\\TestSelenium\\obj\\",
+        "projectPath": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\TestSelenium.csproj",
+        "packagesPath": "C:\\Users\\АЛСУ\\.nuget\\packages\\",
+        "outputPath": "C:\\Файлы\\QA engineer\\git\\TestSelenium\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenar.Gaynullin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\АЛСУ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource1": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -85,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\АЛСУ\\.dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

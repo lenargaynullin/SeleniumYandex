@@ -14,8 +14,8 @@
     <e p="C:\Users\АЛСУ\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" t="Include" />
     <e p="C:\Users\АЛСУ\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\testcentric.engine.metadata.dll" t="Include" />
     <e p="C:\Users\АЛСУ\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\АЛСУ\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="G:\Мой диск\QA engineer\git\SeleniumYandex\TestSelenium" t="IncludeRecursive">
+    <e p="C:\Users\АЛСУ\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.01" t="ExcludeRecursive" />
+    <e p="C:\Файлы\QA engineer\git\TestSelenium" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -45,7 +45,11 @@
       </e>
       <e p="TestSelenium.csproj" t="IncludeRecursive" />
       <e p="UnitTest1.cs.bak" t="Include" />
-      <e p="Yandex.cs" t="Include" />
+      <e p="Yandex" t="Include">
+        <e p="StartPage.cs" t="Include" />
+        <e p="Yandex.cs" t="Include" />
+        <e p="YandexMarket.cs" t="Include" />
+      </e>
       <e p="Yandex.cs.bak" t="Include" />
     </e>
   </component>
