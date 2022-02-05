@@ -22,16 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="160d3d7f-538f-488b-98ca-cdcd335e2a83" name="Default Changelist" comment="04.02.2022">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="160d3d7f-538f-488b-98ca-cdcd335e2a83" name="Default Changelist" comment="05.02.2022">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestSelenium.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yandex/Yandex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Yandex/Yandex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/TestSelenium.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ref/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ref/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/TestSelenium.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/TestSelenium.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/TestSelenium.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1643306478225" duration="5490000" />
       <workItem from="1643644864629" duration="9795000" />
       <workItem from="1643992611660" duration="6083000" />
-      <workItem from="1644052447034" duration="6523000" />
+      <workItem from="1644052447034" duration="17321000" />
     </task>
     <task id="LOCAL-00001" summary="04.02.2022">
       <created>1643999513783</created>
@@ -117,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643999513783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="05.02.2022">
+      <created>1644065135564</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644065135565</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,16 +144,22 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="04.02.2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.02.2022" />
+    <MESSAGE value="05.02.2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.02.2022" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="316" y="-827" key="Vcs.Push.Dialog.v2" timestamp="1643999544007">
-      <screen x="-236" y="-1080" width="1920" height="1040" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1644065146126">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="316" y="-827" key="Vcs.Push.Dialog.v2/0.0.1366.728/-236.-1080.1920.1040@-236.-1080.1920.1040" timestamp="1643999544007" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1644065146126" />
     <state x="498" y="-659" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1643999475779">
       <screen x="-236" y="-1080" width="1920" height="1040" />
     </state>
     <state x="498" y="-659" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728/-236.-1080.1920.1040@-236.-1080.1920.1040" timestamp="1643999475779" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1644075098258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1644075098258" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 using System;
+using System.Net.Mime;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -64,42 +65,42 @@ namespace TestSelenium
             // Клик Смартфоны
             IWebElement button3 = wait.Until(e => e.FindElement(By.XPath("//a[text()='Смартфоны']")));
             button3.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             
             // Выбрать цену от 30000 рублей
             IWebElement price = wait.Until(e => e.FindElement(By.CssSelector("input[name='Цена от']")));
             price.SendKeys("30000");
-            Thread.Sleep(3000);
-
+            Thread.Sleep(2000);
+            
             // Диагональ экрана 6.5" и больше
             IWebElement screen = wait.Until(e => e.FindElement(By.XPath("//span[text()='6.5\" и больше']")));
             screen.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
            
             // Apple
             IWebElement apple = wait.Until(e => e.FindElement(By.XPath("//span[text()='Apple']")));
             apple.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
            
             // Nokia
             IWebElement nokia = wait.Until(e => e.FindElement(By.XPath("//span[text()='Nokia']")));
             nokia.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
 
             // Realme
             IWebElement realme = wait.Until(e => e.FindElement(By.XPath("//span[text()='realme']")));
             realme.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             
             // Samsung
             IWebElement samsung = wait.Until(e => e.FindElement(By.XPath("//span[text()='Samsung']")));
             samsung.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
 
             // Xiaomi
             IWebElement xiaomi = wait.Until(e => e.FindElement(By.XPath("//span[text()='Xiaomi']")));
             xiaomi.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
 
             // Проверить что элементов на странице 10
             int ElementsCount = driver.FindElements(By.XPath("//article")).Count;
@@ -111,29 +112,38 @@ namespace TestSelenium
                 Console.WriteLine("Количество элементов на странице больше 10");
             }
             //Assert.AreEqual(true, ElementsMore10, "Элементов на странице меньше 10");
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             
-            // Запомнить первый элемент в списке.
-            IWebElement firstElement = wait.Until(e => e.FindElement(By.XPath("(//a[contains(@class,'_2f75n _24Q6d')])[1]")));
-            Thread.Sleep(3000);
+            // Запомнить первый элемент в списке.                                        
+            IWebElement firstElement = wait.Until(e => e.FindElement(By.XPath("(//a[contains(@class,'_2f75n _24Q6d')]//span)[1]")));
+            string firstElementText = firstElement.GetAttribute("Text");
             
-            IWebElement firstElementTitle = wait.Until(e => e.FindElement(By.XPath("(//a[@title='Смартфон Samsung Galaxy M52 5G'])[1]")));
-            Thread.Sleep(3000); 
+            
+            
+            
+            string firstElementXpath = "\"(//span[text()='" + firstElementText + "'])\"";
+            
+            Console.WriteLine("firstElementText = " + firstElementText);
+            Console.WriteLine("firstElementXpath = " + firstElementXpath);
+            
+            Thread.Sleep(2000);
+            // ---------------------------------------------------------------------------------------------------------
                 
             // Изменить Сортировку на другую (по цене).
             IWebElement sortingByPrice = wait.Until(e => e.FindElement(By.XPath("//button[text()='по цене']")));
             sortingByPrice.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             
-            // Найти и нажать по имени запомненного объекта.
-            firstElementTitle.Click();   
-            Thread.Sleep(3000);
+            // Найти по имени запомненного объекта
+            IWebElement firstElementFind = wait.Until(e => e.FindElement(By.XPath("//span[text()='Смартфон Samsung Galaxy M52 5G 6/128 ГБ, белый']")));
+            firstElementFind.Click();
+            Thread.Sleep(2000);
             
             // Вывести цифровое значение его оценки.
-            IWebElement phoneRating = wait.Until(e => e.FindElement(By.XPath("(//span[@class='_2v4E8'])[2]")));
-            string rating = phoneRating.GetAttribute("innerText");
+            IWebElement phoneRating = wait.Until(e => e.FindElement(By.XPath("//span[@class='_2v4E8']")));
+            string rating = phoneRating.GetAttribute("text");
             
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             Console.WriteLine("Оценка равна = " + rating);
             
             
