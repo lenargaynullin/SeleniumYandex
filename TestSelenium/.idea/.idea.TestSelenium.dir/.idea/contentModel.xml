@@ -25,32 +25,10 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
-      <e p="patterns" t="Include">
-        <e p="LoginPage.cs" t="Include" />
-        <e p="Menu.cs" t="Include" />
-        <e p="PatternsTests.cs" t="Include" />
-        <e p="Person.cs" t="Include" />
-        <e p="RegistrationPage.cs" t="Include" />
-        <e p="StartPage.cs" t="Include" />
-      </e>
-      <e p="screen" t="Include">
-        <e p="resourses" t="Include">
-          <e p="cssExample.json" t="Include" />
-          <e p="screen.png" t="Include" />
-          <e p="screenElement.png" t="Include" />
-          <e p="screenTest.png" t="Include" />
-        </e>
-        <e p="ScreenExample.cs" t="Include" />
-        <e p="ScreenExample.cs.bak" t="Include" />
-      </e>
       <e p="TestSelenium.csproj" t="IncludeRecursive" />
-      <e p="UnitTest1.cs.bak" t="Include" />
       <e p="Yandex" t="Include">
-        <e p="StartPage.cs" t="Include" />
         <e p="Yandex.cs" t="Include" />
-        <e p="YandexMarket.cs" t="Include" />
       </e>
-      <e p="Yandex.cs.bak" t="Include" />
     </e>
   </component>
 </project>
